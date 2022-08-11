@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sanwitter-react-firebase/static/css/main.a749d3de.css",
+    "main.js": "/sanwitter-react-firebase/static/js/main.5bb3240c.js",
+    "index.html": "/sanwitter-react-firebase/index.html",
+    "main.a749d3de.css.map": "/sanwitter-react-firebase/static/css/main.a749d3de.css.map",
+    "main.5bb3240c.js.map": "/sanwitter-react-firebase/static/js/main.5bb3240c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a749d3de.css",
+    "static/js/main.5bb3240c.js"
+  ]
+}
