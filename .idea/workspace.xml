@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="feat: crud 구현">
+    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="feat: edit profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sweet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fbase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/fbase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/EditProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +72,7 @@
       <workItem from="1660139495665" duration="344000" />
       <workItem from="1660140104731" duration="10869000" />
       <workItem from="1660187985097" duration="10280000" />
-      <workItem from="1660214597653" duration="10445000" />
+      <workItem from="1660214597653" duration="12261000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660125391134</created>
@@ -122,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660209695030</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: edit profile">
+      <created>1660235364243</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660235364243</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +147,8 @@
     <MESSAGE value="feat: logout" />
     <MESSAGE value="feat: create and read 구현" />
     <MESSAGE value="feat: crud 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: crud 구현" />
+    <MESSAGE value="feat: edit profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: edit profile" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
