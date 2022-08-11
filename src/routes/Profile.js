@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 export default ({ refreshUser,userObj }) => {
   const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
   const history = useHistory();
-  const onLogout = () => {
+  const onLogOut = () => {
     authService.signOut();
     history.push("/");
   };
@@ -25,17 +25,27 @@ export default ({ refreshUser,userObj }) => {
     };
   };
   return (
-    <>
-      <form onSubmit={onSubmit}>
+    <div className="container">
+      <form onSubmit={onSubmit} className="profileForm">
         <input
           onChange={onChange}
           type="text"
+          autoFocus
           placeholder="Display name"
           value={newDisplayName}
         />
-        <input type="submit" value="Update Profile" />
+        <input
+          type="submit"
+          value="Update Profile"
+          className="formBtn"
+          style={{
+            marginTop: 10,
+          }}
+        />
       </form>
-      <button onClick={onLogout}>Log Out</button>
-    </>
+      <span className="formBtn cancelBtn logOut" onClick={onLogOut}>
+        Log Out
+      </span>
+    </div>
   )
-}
+};

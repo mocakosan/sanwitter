@@ -15,9 +15,9 @@ const Home = ({ userObj }) => {
     })
   },[])
   return (
-   <div>
+    <div className="container">
      <SweetFactory userObj={userObj}/>
-     <div>
+      <div style={{ marginTop: 30 }}>
        {sweets.map((sweet) => (
          <Sweet key={sweet.id} sweetObj={sweet} isOwner={sweet.creatorId === userObj.uid}/>
          )

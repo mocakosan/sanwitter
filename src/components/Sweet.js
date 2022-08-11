@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { dbservice, storageService } from "../fbase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Sweet = ({ sweetObj, isOwner }) => {
   const [edit, setEdit] = useState(false);
@@ -38,12 +40,12 @@ const Sweet = ({ sweetObj, isOwner }) => {
     setNewSweet(value);
   };
   return(
-    <div>
+    <div className="nweet">
       {edit ? (
         <>
           {isOwner && (
             <>
-              <form onSubmit={onSubmit}>
+              <form onSubmit={onSubmit} className="container nweetEdit">
                 <input
                   type="text"
                   placeholder="Edit your Sweet"
@@ -51,23 +53,27 @@ const Sweet = ({ sweetObj, isOwner }) => {
                   required
                   onChange={onChange}
                 />
-                <input type="submit" value="Update Sweet" />
+                <input type="submit" value="Update Nweet" className="formBtn" />
               </form>
-              <button onClick={toggleEdit}>Cancel</button>
+              <span onClick={toggleEdit} className="formBtn cancelBtn">
+            Cancel
+          </span>
             </>
           )}
         </>
       ) : (
         <>
           <h4>{sweetObj.text}</h4>
-          {sweetObj.attachUrl && (
-            <img src={sweetObj.attachUrl} width="50px" height="50px" />
-          )}
+          {sweetObj.attachUrl && <img src={sweetObj.attachUrl} />}
           {isOwner && (
-            <>
-              <button onClick={onDelete}>Delete</button>
-              <button onClick={toggleEdit}>Edit</button>
-            </>
+            <div className="nweet__actions">
+              <span onClick={onDelete}>
+                <FontAwesomeIcon icon={faTrash} />
+              </span>
+              <span onClick={toggleEdit}>
+                <FontAwesomeIcon icon={faPencilAlt} />
+              </span>
+            </div>
           )}
         </>
       )}
