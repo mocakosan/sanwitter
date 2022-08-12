@@ -4,11 +4,6 @@ import { useHistory } from "react-router-dom";
 
 export default ({ refreshUser,userObj }) => {
   const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
-  const history = useHistory();
-  const onLogOut = () => {
-    authService.signOut();
-    history.push("/");
-  };
   const onChange = (event) =>{
     const {
       target: { value },
@@ -28,6 +23,7 @@ export default ({ refreshUser,userObj }) => {
     <div className="container">
       <form onSubmit={onSubmit} className="profileForm">
         <input
+          className="container-text"
           onChange={onChange}
           type="text"
           autoFocus
@@ -38,14 +34,8 @@ export default ({ refreshUser,userObj }) => {
           type="submit"
           value="Update Profile"
           className="formBtn"
-          style={{
-            marginTop: 10,
-          }}
         />
       </form>
-      <span className="formBtn cancelBtn logOut" onClick={onLogOut}>
-        Log Out
-      </span>
     </div>
   )
 };

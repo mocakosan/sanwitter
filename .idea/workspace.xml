@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="feat: deploy">
+    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="style: style code change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SweetFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SweetUpload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,7 @@
       <workItem from="1660187985097" duration="10280000" />
       <workItem from="1660214597653" duration="16412000" />
       <workItem from="1660276490600" duration="616000" />
-      <workItem from="1660283363701" duration="10644000" />
+      <workItem from="1660283363701" duration="15402000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660125391134</created>
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660240627131</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="style: style code change">
+      <created>1660295903420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660295903421</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +183,8 @@
     <MESSAGE value="style: refactoring code" />
     <MESSAGE value="style: style change" />
     <MESSAGE value="feat: deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: deploy" />
+    <MESSAGE value="style: style code change" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: style code change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

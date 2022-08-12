@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { authService } from "../fbase";
 
 const Navigation = ({ userObj }) =>{
+  const history = useHistory();
+  const onLogOut = () => {
+    authService.signOut();
+    history.push("/");
+  };
   return(
     <nav>
       <ul style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
@@ -22,6 +28,7 @@ const Navigation = ({ userObj }) =>{
               flexDirection: "column",
               alignItems: "center",
               fontSize: 12,
+              marginRight:20
             }}
           >
             <FontAwesomeIcon icon={faUser} color={"#04AAFF"} size="2x" />
@@ -32,6 +39,9 @@ const Navigation = ({ userObj }) =>{
             </span>
           </Link>
         </li>
+        <span className="formBtn cancelBtn logOut" onClick={onLogOut}>
+        Log Out
+        </span>
       </ul>
     </nav>
   )
