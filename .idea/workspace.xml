@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="style: style code change">
+    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="style: logout code change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
@@ -76,7 +74,7 @@
       <workItem from="1660187985097" duration="10280000" />
       <workItem from="1660214597653" duration="16412000" />
       <workItem from="1660276490600" duration="616000" />
-      <workItem from="1660283363701" duration="15402000" />
+      <workItem from="1660283363701" duration="19944000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660125391134</created>
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660295903421</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="style: logout code change">
+      <created>1660301356481</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660301356481</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +189,8 @@
     <MESSAGE value="style: style change" />
     <MESSAGE value="feat: deploy" />
     <MESSAGE value="style: style code change" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: style code change" />
+    <MESSAGE value="style: logout code change" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: logout code change" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

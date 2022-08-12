@@ -57,8 +57,8 @@ form {
 }
 
 .container-swapper .container-upload img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: fixed;
     right: 4rem;
@@ -203,7 +203,7 @@ form {
     margin-bottom: 20px;
     background-color: white;
     width: 100%;
-    max-width: 320px;
+    max-width: 600px;
     padding: 20px;
     border-radius: 10px;
     position: relative;
