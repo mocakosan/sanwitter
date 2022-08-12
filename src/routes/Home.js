@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { dbservice, storageService } from "../fbase";
 import Sweet from "../components/Sweet";
-import SweetFactory from "../components/SweetFactory";
+import SweetUpload from "../components/SweetUpload";
+import { Link, useHistory } from "react-router-dom";
+import up from "../up.png";
 
 const Home = ({ userObj }) => {
+  //Data read
   const [sweets,setSweets] = useState([]);
   useEffect(() => {
     dbservice.collection("sanweets").onSnapshot((snapshot) => {
@@ -15,15 +18,19 @@ const Home = ({ userObj }) => {
     })
   },[])
   return (
-    <div className="container">
-     <SweetFactory userObj={userObj}/>
-      <div style={{ marginTop: 30 }}>
-       {sweets.map((sweet) => (
-         <Sweet key={sweet.id} sweetObj={sweet} isOwner={sweet.creatorId === userObj.uid}/>
-         )
-       )}
-     </div>
-   </div>
+    <div className="container-swapper">
+      <div className="container">
+        <div>
+         {sweets.map((sweet) => (
+           <Sweet key={sweet.id} sweetObj={sweet} isOwner={sweet.creatorId === userObj.uid}/>
+           )
+         )}
+       </div>
+      </div>
+      <Link to="/sweetFactory">
+        <div className="container-upload" ><img src={up} alt="" /></div>
+      </Link>
+    </div>
   );
 };
 export default Home;

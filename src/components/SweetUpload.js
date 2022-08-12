@@ -3,15 +3,19 @@ import { v4 as uuidv4 } from "uuid";
 import { storageService, dbservice } from "fbase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Link, useHistory } from "react-router-dom";
 
-const SweetFactory = ({ userObj }) => {
+const SweetUpload = ({ userObj }) => {
+  const history = useHistory();
   const [sweet, setSweet] = useState("");
   const [attach, setAttach] = useState("");
+  //게시물 create
   const onSubmit = async (event) => {
     if (sweet === "") {
       return;
     }
     event.preventDefault();
+    //storage에 image url 읽기 및 가져오기
     let attachUrl = "";
     if (attach !== "") {
       const attachRef = storageService
@@ -20,6 +24,7 @@ const SweetFactory = ({ userObj }) => {
       const res = await attachRef.putString(attach, "data_url");
       attachUrl = await res.ref.getDownloadURL();
     }
+    //database에 데이터 입력
     const sweetObj = {
       text: sweet,
       createdAt: Date.now(),
@@ -29,6 +34,7 @@ const SweetFactory = ({ userObj }) => {
     await dbservice.collection("sanweets").add(sweetObj);
     setSweet("");
     setAttach("");
+    history.push("/");
   };
   const onChange = (event) => {
     const {
@@ -36,6 +42,7 @@ const SweetFactory = ({ userObj }) => {
     } = event;
     setSweet(value);
   };
+  //image 입력
   const onFileChange = (event) => {
     const {
       target: { files },
@@ -94,4 +101,4 @@ const SweetFactory = ({ userObj }) => {
     </form>
   );
 };
-export default SweetFactory;
+export default SweetUpload;

@@ -4,6 +4,7 @@ import Auth from "../routes/Auth";
 import Home from "../routes/Home";
 import Navigation from "./Navigation";
 import Profile from "../routes/Profile";
+import SweetUpload from "./SweetUpload";
 
 const AppRouter =  ({ refreshUser,isLoggedIn, userObj }) => {
   return(
@@ -17,7 +18,7 @@ const AppRouter =  ({ refreshUser,isLoggedIn, userObj }) => {
               maxWidth: 890,
               width: "100%",
               margin: "0 auto",
-              marginTop: 80,
+              marginTop: 20,
               display: "flex",
               justifyContent: "center",
             }}
@@ -27,6 +28,9 @@ const AppRouter =  ({ refreshUser,isLoggedIn, userObj }) => {
             </Route>
             <Route exact path="/profile" >
               <Profile userObj={userObj} refreshUser={refreshUser} />
+            </Route>
+            <Route exact path="/sweetFactory">
+              <SweetUpload userObj={userObj} />
             </Route>
           </div>
         )

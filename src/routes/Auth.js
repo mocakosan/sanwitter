@@ -9,6 +9,7 @@ import { authService, firebaseInstance } from "../fbase";
 import AuthForm from "../components/AuthForm";
 
 const Auth = () => {
+  //social login
   const onSocial = async (event) => {
     const {
       target: { name },
