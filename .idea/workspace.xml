@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="style: logout code change">
+    <list default="true" id="7e09b6dd-f95a-4250-904e-5582a4a6eba4" name="변경" comment="feat: profile my tweet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1660187985097" duration="10280000" />
       <workItem from="1660214597653" duration="16412000" />
       <workItem from="1660276490600" duration="616000" />
-      <workItem from="1660283363701" duration="19944000" />
+      <workItem from="1660283363701" duration="22192000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1660125391134</created>
@@ -160,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660301356481</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: profile my tweet">
+      <created>1660316863546</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660316863546</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +196,8 @@
     <MESSAGE value="feat: deploy" />
     <MESSAGE value="style: style code change" />
     <MESSAGE value="style: logout code change" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: logout code change" />
+    <MESSAGE value="feat: profile my tweet" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: profile my tweet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

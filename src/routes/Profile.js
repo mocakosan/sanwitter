@@ -2,16 +2,16 @@ import React, { useEffect,useState } from "react";
 import { dbservice } from "../fbase";
 import Sweet from "../components/Sweet";
 
-export default ({ refreshUser,userObj,sweetObj, isOwner }) => {
+export default ({ refreshUser,userObj }) => {
   const [newDisplayName, setNewDisplayName] = useState(userObj.displayName);
   const [sweets, setSweets] = useState([]);
-  const onChange = (event) =>{
+  const onChangeName = (event) =>{
     const {
       target: { value },
     } = event;
     setNewDisplayName(value);
   }
-  const onSubmit = async (event) => {
+  const onSubmitName = async (event) => {
     event.preventDefault();
     if(userObj.displayName !== newDisplayName) {
       await userObj.updateProfile({
@@ -20,25 +20,25 @@ export default ({ refreshUser,userObj,sweetObj, isOwner }) => {
       refreshUser();
     };
   };
-  const getMyNweets = async () => {
-    const mysweets = await dbservice
+  const getMySweets = async () => {
+    const mySweets = await dbservice
       .collection("sanweets")
       .where("creatorId", "==", userObj.uid)
       .orderBy("createdAt")
       .get();
-    setSweets(mysweets.docs.map((doc) => doc.data()));
+    setSweets(mySweets.docs.map((doc) => doc.data()));
   };
 
   useEffect(() => {
-    getMyNweets();
+    getMySweets();
   }, []);
   console.log(sweets);
   return (
     <div className="container">
-      <form onSubmit={onSubmit} className="profileForm">
+      <form onSubmit={onSubmitName} className="profileForm">
         <input
           className="container-text"
-          onChange={onChange}
+          onChange={onChangeName}
           type="text"
           autoFocus
           placeholder="Display name"
