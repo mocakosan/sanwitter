@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/sanwitter-react-firebase/static/css/main.a749d3de.css",
-    "main.js": "/sanwitter-react-firebase/static/js/main.5bb3240c.js",
+    "main.css": "/sanwitter-react-firebase/static/css/main.fa4be10e.css",
+    "main.js": "/sanwitter-react-firebase/static/js/main.b35cfd64.js",
+    "static/media/up.png": "/sanwitter-react-firebase/static/media/up.fcdac6f910d8f636992e.png",
     "index.html": "/sanwitter-react-firebase/index.html",
-    "main.a749d3de.css.map": "/sanwitter-react-firebase/static/css/main.a749d3de.css.map",
-    "main.5bb3240c.js.map": "/sanwitter-react-firebase/static/js/main.5bb3240c.js.map"
+    "main.fa4be10e.css.map": "/sanwitter-react-firebase/static/css/main.fa4be10e.css.map",
+    "main.b35cfd64.js.map": "/sanwitter-react-firebase/static/js/main.b35cfd64.js.map"
   },
   "entrypoints": [
-    "static/css/main.a749d3de.css",
-    "static/js/main.5bb3240c.js"
+    "static/css/main.fa4be10e.css",
+    "static/js/main.b35cfd64.js"
   ]
 }
